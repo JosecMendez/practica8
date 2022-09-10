@@ -1,0 +1,27 @@
+# print("Ejercicio 1")
+# numero = int(input("Ingresa un numero -> "))
+# diccionario = {i:i*i for i in range(1,numero+1)}
+# print(diccionario)
+# print()
+
+# print("Ejercicio 2")
+# dicc = {}
+# cadena = input("Escribe lo que quieras -> ")
+# for i in cadena:
+#     dicc[i] = cadena.count(i)
+# print(dicc)
+# print()
+
+# print("Ejercicio 3")
+# frutas = {"manzana":40, "platano":28,"kiwi":50,"aguacate":65, "melón":20}
+# total = 0
+# for i in frutas:
+#     valor = frutas["manzana"]
+# print(valor)
+# # while True:
+# #     fruta = input("Ingresa la fruta -> ")
+# #     if fruta in frutas:
+# #         cantidad = int(input("Cuantos kilos marchanta -> "))
+# #         total = cantidad
+# #     else:
+# #         print("Ahorita no lo vengo manejando")
