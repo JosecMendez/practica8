@@ -1,9 +1,11 @@
+Escribe un programa python que pida un número por teclado y que cree un diccionario cuyas claves sean desde el número 1 hasta el número indicado, y los valores sean los cuadrados de las claves.
 # print("Ejercicio 1")
 # numero = int(input("Ingresa un numero -> "))
 # diccionario = {i:i*i for i in range(1,numero+1)}
 # print(diccionario)
 # print()
 
+Escribe un programa que lea una cadena y devuelva un diccionario donde las llaves seràn los caracteres y los valores de dichas llaves serà el número de veces que aparece el carácter en la cadena
 # print("Ejercicio 2")
 # dicc = {}
 # cadena = input("Escribe lo que quieras -> ")
@@ -12,16 +14,23 @@
 # print(dicc)
 # print()
 
+Vamos a crear un programa en python donde vamos a declarar un diccionario para guardar los precios de las distintas frutas. El programa pedirá el nombre de la fruta y la cantidad que se ha vendido y nos mostrará el precio final de la fruta a partir de los datos guardados en el diccionario. Si la fruta no existe nos dará un error. Tras 
+cada consulta el programa nos preguntará si queremos hacer otra consulta.
 # print("Ejercicio 3")
-# frutas = {"manzana":40, "platano":28,"kiwi":50,"aguacate":65, "melón":20}
-# total = 0
-# for i in frutas:
-#     valor = frutas["manzana"]
-# print(valor)
-# # while True:
-# #     fruta = input("Ingresa la fruta -> ")
-# #     if fruta in frutas:
-# #         cantidad = int(input("Cuantos kilos marchanta -> "))
-# #         total = cantidad
-# #     else:
-# #         print("Ahorita no lo vengo manejando")
+def ventas():
+    frutas = {"manzana":40, "platano":28,"kiwi":50,"aguacate":65, "melón":20}
+    fruta = input("Ingresa la fruta -> ").lower()
+    cantidad = int(input("Cuantos kilos marchanta -> "))
+    if fruta in frutas:
+        print(f"seran {frutas[fruta]*cantidad} por {cantidad} de {fruta}")
+    else:
+        print("De esa fruta no vengo manejando")
+
+while True:
+    ventas()
+    i = input("algo mas jefa? -> (si/no) -> ").lower()
+    if i == "si":
+        pass
+    else:
+        print("Gracias, buen dia!")
+        break
